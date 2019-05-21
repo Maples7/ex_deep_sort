@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mix format --check-formatted && mix credo --strict && mix test
+mix test_all
 RES=$?
 if [ $RES -ne 0  ]
 then
