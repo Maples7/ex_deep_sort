@@ -11,7 +11,7 @@ defmodule DeepSort.MixProject do
       app: :deep_sort,
       version: @version,
       elixir: "~> 1.8",
-      description: "A hex module who does recursive quick sort over a nested list.",
+      description: "A hex module who does recursive sort over a nested list.",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       source_url: "https://github.com/Maples7/ex_deep_sort",
