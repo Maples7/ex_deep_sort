@@ -1,10 +1,15 @@
 defmodule DeepQsort.MixProject do
+  @moduledoc """
+  Project file for DeepQsort module
+  """
   use Mix.Project
+
+  @version File.cwd!() |> Path.join("version") |> File.read!() |> String.trim()
 
   def project do
     [
       app: :ex_deep_qsort,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps()
