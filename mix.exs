@@ -27,7 +27,9 @@ defmodule DeepSort.MixProject do
       ],
       docs: [
         extras: ["README.md"]
-      ]
+      ],
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [coveralls: :test]
     ]
   end
 
@@ -45,7 +47,8 @@ defmodule DeepSort.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:pre_commit_hook, ">= 1.2.0", only: :dev, runtime: false},
       {:credo, ">= 1.0.0", only: [:dev, :test], runtime: false},
-      {:ex_doc, "~> 0.19", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
+      {:excoveralls, "~> 0.10", only: [:dev, :test], runtime: false}
     ]
   end
 end

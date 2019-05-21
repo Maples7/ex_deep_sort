@@ -6,11 +6,16 @@ build:
 	@echo "Building the software..."
 	@mix compile
 
+install:
+	@echo "Install software required for this repo..."
+	@mix local.hex --force
+	@mix local.rebar --force
+
 deps:
 	@echo "Install dependencies required for this repo..."
 	@mix deps.get
 
-pre-build: deps
+pre-build: install deps
 	@echo "Running scripts before the build..."
 
 post-build:
@@ -46,4 +51,4 @@ bump-version:
 	@echo "Bump version..."
 	@bin/bump_version.sh
 
-.PHONY: build deps pre-build post-build all test pre-commit clean run build-staging build-prod bump-version
+.PHONY: build install deps pre-build post-build all test pre-commit clean run build-staging build-prod bump-version

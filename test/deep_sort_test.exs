@@ -2,7 +2,7 @@ defmodule DeepSortTest do
   @moduledoc """
   Unit tests for DeepSort
   """
-  use ExUnit.Case
+  use ExUnit.Case, async: true
   doctest DeepSort
 
   test "sort a complex nested list with a sorter function" do
