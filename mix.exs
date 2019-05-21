@@ -1,6 +1,6 @@
-defmodule DeepQsort.MixProject do
+defmodule DeepSort.MixProject do
   @moduledoc """
-  Project file for DeepQsort module
+  Project file for DeepSort module
   """
   use Mix.Project
 
@@ -8,11 +8,26 @@ defmodule DeepQsort.MixProject do
 
   def project do
     [
-      app: :ex_deep_qsort,
+      app: :deep_sort,
       version: @version,
       elixir: "~> 1.8",
+      description: "A hex module who does recursive quick sort over a nested list.",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      source_url: "https://github.com/Maples7/ex_deep_sort",
+      homepage_url: "https://hex.pm/packages/deep_sort",
+      package: [
+        licenses: ["MIT"],
+        links: %{
+          "GitHub" => "https://github.com/Maples7/ex_deep_sort",
+          "Docs" => "https://hex.pm/packages/deep_sort",
+          "Author" => "http://maples7.com/about/"
+        },
+        maintainers: ["Maples7"]
+      ],
+      docs: [
+        extras: ["README.md"]
+      ]
     ]
   end
 

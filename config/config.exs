@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :ex_deep_qsort, key: :value
+#     config :deep_sort, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:ex_deep_qsort, :key)
+#     Application.get_env(:deep_sort, :key)
 #
 # You can also configure a third-party app:
 #
