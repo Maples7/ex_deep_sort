@@ -61,8 +61,8 @@ end
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](https://github.com/Maples7/ex_deep_sort/blob/master/LICENSE)
 
 ## ChangeLog
 
-[CHANGELOG](./CHANGELOG.md)
+[CHANGELOG](https://github.com/Maples7/ex_deep_sort/blob/master/CHANGELOG.md)
