@@ -1,0 +1,8 @@
+#!/bin/sh
+
+mix format --check-formatted && mix credo --strict && mix test
+RES=$?
+if [ $RES -ne 0  ]
+then
+  exit $RES
+fi

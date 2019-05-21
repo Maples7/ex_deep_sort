@@ -1,6 +1,6 @@
 defmodule DeepQsort do
   @moduledoc """
-  Documentation for DeepQsort.
+  A module who does recursive quick sort over a nested list.
   """
 
   @doc """
