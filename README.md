@@ -5,7 +5,7 @@
 [![hex.pm version](https://img.shields.io/hexpm/v/deep_sort.svg)](https://hex.pm/packages/deep_sort)
 [![hex.pm downloads](https://img.shields.io/hexpm/dt/deep_sort.svg)](https://hex.pm/packages/deep_sort)
 
-A hex module who does recursive quick sort over a nested list.
+A hex module who does recursive sort over a nested list.
 
 ## why?
 
@@ -15,7 +15,7 @@ As we all know, different data types in Elixir can be compared using comparison 
 
 By this way, `Enum.sort` can do flat sorting jobs over enumerables. This package steps forward and it does recursive sort over a nested list.
 
-## Example
+## Examples
 
 ```shell
 iex> DeepSort.sort([4, 2, 3, 1])
@@ -42,7 +42,7 @@ iex> DeepSort.sort([4, 2, [3, 4, 1, 2], 1, "abc", :abc, [b: 1, a: 2, c: ["world"
 
 The function is based on [`Enum.sort/2`](https://hexdocs.pm/elixir/Enum.html#sort/2) but aims to do a recursive sort over a nested list.
 
-## Document
+## Docs
 
 The docs can be found at [https://hexdocs.pm/deep_sort](https://hexdocs.pm/deep_sort).
 
@@ -54,7 +54,7 @@ by adding `deep_sort` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:deep_sort, "~> 0.3.0"}
+    {:deep_sort, "~> 0.3.0"} # change version to newest
   ]
 end
 ```
