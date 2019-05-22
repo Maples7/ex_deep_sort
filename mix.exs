@@ -20,7 +20,7 @@ defmodule DeepSort.MixProject do
         licenses: ["MIT"],
         links: %{
           "GitHub" => "https://github.com/Maples7/ex_deep_sort",
-          "Docs" => "https://hex.pm/packages/deep_sort",
+          "Docs" => "https://hexdocs.pm/deep_sort/readme.html",
           "Author" => "http://maples7.com/about/"
         },
         maintainers: ["Maples7"]
