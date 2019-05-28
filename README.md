@@ -5,7 +5,7 @@
 [![hex.pm version](https://img.shields.io/hexpm/v/deep_sort.svg)](https://hex.pm/packages/deep_sort)
 [![hex.pm downloads](https://img.shields.io/hexpm/dt/deep_sort.svg)](https://hex.pm/packages/deep_sort)
 
-A hex module who does recursive sort over a nested list.
+A hex module who does recursive sort over any enumerables.
 
 ## why?
 
@@ -13,7 +13,7 @@ As we all know, different data types in Elixir can be compared using comparison 
 
 > number < atom < reference < function < port < pid < tuple < map < list < bitstring
 
-By this way, `Enum.sort` can do flat sorting jobs over enumerables. This package steps forward and it does recursive sort over a nested list.
+By this way, `Enum.sort` can do flat sorting jobs over enumerables. This package steps forward and it does recursive sort over any enumerables.
 
 ## Examples
 
@@ -38,9 +38,21 @@ iex> DeepSort.sort([4, 2, [3, 4, 1, 2], 1, "abc", :abc, [b: 1, a: 2, c: ["world"
   ],
   "abc"
 ]
+
+iex> DeepSort.sort("AsDfdg") # String is not enumerable in Elixir
+"AsDfdg"
+
+iex> DeepSort.sort('AsDfdg') # But Charlist is enumerable
+'ADdfgs'
+
+iex> DeepSort.sort({:two, 1, "three"}) # Tuple is not enumerable
+{:two, 1, "three"}
+
+iex> DeepSort.sort(%{two: 1, one: 1, "3": "three"}) # However Map is enumerable
+["3": "three", one: 1, two: 1]
 ```
 
-The function is based on [`Enum.sort/2`](https://hexdocs.pm/elixir/Enum.html#sort/2) but aims to do a recursive sort over a nested list.
+The function is based on [`Enum.sort/2`](https://hexdocs.pm/elixir/Enum.html#sort/2) but aims to do a recursive sort over any enumerables.
 
 ## Docs
 
