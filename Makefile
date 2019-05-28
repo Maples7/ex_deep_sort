@@ -51,4 +51,8 @@ bump-version:
 	@echo "Bump version..."
 	@bin/bump_version.sh
 
-.PHONY: build install deps pre-build post-build all test pre-commit clean run build-staging build-prod bump-version
+tag: 
+	@echo "Tag it via git..."
+	@git tag v`cat version`
+
+.PHONY: build install deps pre-build post-build all test pre-commit clean run build-staging build-prod bump-version tag
