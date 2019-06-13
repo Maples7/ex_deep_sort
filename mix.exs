@@ -27,7 +27,7 @@ defmodule DeepSort.MixProject do
       ],
       docs: [
         extras: ["README.md": [title: "ReadMe"], "CHANGELOG.md": [title: "ChangeLog"]],
-        main: "ReadMe"
+        main: "readme"
       ],
       test_coverage: [tool: ExCoveralls],
       preferred_cli_env: [coveralls: :test]
