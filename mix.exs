@@ -23,7 +23,8 @@ defmodule DeepSort.MixProject do
           "Docs" => "https://hexdocs.pm/deep_sort/readme.html",
           "Author" => "http://maples7.com/about/"
         },
-        maintainers: ["Maples7"]
+        maintainers: ["Maples7"],
+        files: ~w(lib .formatter.exs mix.exs README* LICENSE* CHANGELOG* version Makefile)
       ],
       docs: [
         extras: ["README.md": [title: "ReadMe"], "CHANGELOG.md": [title: "ChangeLog"]],

@@ -1,3 +1,8 @@
+## 1.1.0 (June 14, 2019)
+
+- doc: more user-friendly doc
+- bugfix: fix missing file version
+
 ## 1.0.0 (May 28, 2019)
 
 - Make it work with any enumerables rather than only List
