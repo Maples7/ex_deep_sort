@@ -66,7 +66,7 @@ by adding `deep_sort` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:deep_sort, "~> 0.3.0"} # change version to newest
+    {:deep_sort, "~> 1.1.0"} # change version to newest
   ]
 end
 ```
