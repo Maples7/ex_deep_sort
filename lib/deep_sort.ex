@@ -44,9 +44,7 @@ defmodule DeepSort do
   def sort(enumerable, sorter \\ &<=/2) when is_function(sorter, 2) do
     if Enumerable.impl_for(enumerable) do
       enumerable
-      |> Enum.map(fn item ->
-        if Enumerable.impl_for(item), do: sort(item, sorter), else: item
-      end)
+      |> Enum.map(&sort(&1, sorter))
       |> Enum.sort(sorter)
     else
       enumerable
