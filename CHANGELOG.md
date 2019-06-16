@@ -1,3 +1,7 @@
+## 1.1.1 (June 16, 2019)
+
+- Simplify recursive logic with performance improved
+
 ## 1.1.0 (June 14, 2019)
 
 - doc: more user-friendly doc
